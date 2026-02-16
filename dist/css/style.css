@@ -1,5 +1,65 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #166f78;
+  border-bottom: 6px solid #07d3d3;
+  padding: 1rem;
+}
+.nav__logo-image {
+  height: 3rem;
+  width: auto;
+}
+.nav__list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.nav__link {
+  display: flex;
+  align-items: center;
+}
+.nav__icon {
+  height: 30px;
+  width: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .game-title {
   color: red;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+body {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
