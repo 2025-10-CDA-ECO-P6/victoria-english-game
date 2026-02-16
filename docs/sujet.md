@@ -1,3 +1,35 @@
+# Git la suite
+
+## Reprise des bases
+
+- Initialiser un dÃ©pÃ´t git
+- CrÃ©er des fichiers
+- Ajouter les fichiers au suivi
+- Faire un commit
+- Pousser les modifications sur un dÃ©pÃ´t distant (GitHub, GitLab, etc.)
+
+## Comment travailler Ã  plusieurs sur un mÃªme projet ?
+
+- Cloner un dÃ©pÃ´t distant
+```
+git clone <url-du-depot>
+```
+- S'inviter sur le projet Github
+- RÃ©aliser des modifications
+- Ajouter les modifications au suivi
+- Commiter les modifications
+- RÃ©cupÃ©rer les modifications des autres membres de l'Ã©quipe
+```
+git pull
+```
+- Pousser les modifications sur le dÃ©pÃ´t distant
+
+## Est ce qu'on peut faire mieux ?
+
+GitFlow est une mÃ©thodologie de travail en Ã©quipe qui permet de mieux organiser le travail sur un projet. Elle repose sur l'utilisation de branches pour sÃ©parer les diffÃ©rentes Ã©tapes du dÃ©veloppement.
+Il existe plusieurs git flow...
+Mais lÃ  on va rentrer dans le monde des devs...
+
 ## Sujet du TP
 
 Maquettes de l'english game sur Teams + Quelques assets graphiques dans le dossier "assets" du projet.
@@ -136,8 +168,8 @@ p {
 $primary100: #cffefb;
 $primary200: #a5fcf8;
 $primary300: #68f8f3;
-$primary400: #23edea;
 $primary500: #07d3d3;
+$primary400: #0CAAB1;
 $primary600: #09aab1;
 $primary700: #0f878f;
 $primary800: #166f78;
