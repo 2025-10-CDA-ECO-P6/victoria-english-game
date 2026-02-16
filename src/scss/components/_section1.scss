@@ -1,0 +1,44 @@
+@use "../utils/variables" as vars;
+
+.section1 {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem 0.75rem;
+  background-color: vars.$primary950;
+  color: vars.$primary200;
+  grid-template-columns: 1fr;
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 16px;
+    border: 8px solid vars.$primary200;
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr; 
+    padding: 4rem;
+    gap:2rem;
+
+    &__title {
+      font-size: 4rem;
+      grid-column: 1;
+      grid-row: 1;
+      padding-top: 1rem;
+    }
+
+    &__description {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &__image {
+      grid-column: 2;
+      grid-row: 1 / 3; 
+      align-self: center;
+    }
+  }
+}

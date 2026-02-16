@@ -1,16 +1,12 @@
 @use "utils/variables" as vars;
 @use "components/nav";
+@use "components/section1";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.game-title{
-    color:red;
-}
-
 
 html {
   font-size: 16px;
