@@ -118,7 +118,7 @@
 }
 .section3__image {
   background-color: #ffffff;
-  width: 110%;
+  width: calc(100% + 2rem);
   padding: 3rem;
 }
 .section3__article {
