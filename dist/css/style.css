@@ -119,7 +119,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../../assets/section3/Calendar.svg");
+  background-image: url("/assets/section3/Calendar.svg");
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: -10vw 4%;
