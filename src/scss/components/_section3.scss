@@ -3,12 +3,29 @@
 
 .section3 {
  $padding: 2rem;  
-
   @include mix.rounded-section(vars.$primary400);
   color: vars.$neutral0;
   padding: $padding;
   text-align: center;
   padding-top: 1rem;
+
+    &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../../../assets/section3/Calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: -10vw 4%;
+    opacity: 0.2;
+    z-index: 0;
+    border-radius: inherit;
+
+     @media screen and (min-width: 640px) {
+    background-size: 60%;
+    background-position: -25vw 10%;
+    }
+  }
 
     &__content {
     display: flex;

@@ -114,6 +114,24 @@
   text-align: center;
   padding-top: 1rem;
 }
+.section3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../assets/section3/Calendar.svg");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: -10vw 4%;
+  opacity: 0.2;
+  z-index: 0;
+  border-radius: inherit;
+}
+@media screen and (min-width: 640px) {
+  .section3::before {
+    background-size: 60%;
+    background-position: -25vw 10%;
+  }
+}
 .section3__content {
   display: flex;
   flex-direction: column;
