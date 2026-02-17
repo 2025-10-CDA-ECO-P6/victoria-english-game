@@ -1,0 +1,98 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mix;
+
+.section3 {
+ $padding: 2rem;  
+  @include mix.rounded-section(vars.$primary400);
+  color: vars.$neutral0;
+  padding: $padding;
+  text-align: center;
+  padding-top: 1rem;
+
+    &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../../../assets/section3/Calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: -10vw 4%;
+    opacity: 0.2;
+    z-index: 0;
+    border-radius: inherit;
+
+     @media screen and (min-width: 640px) {
+    background-size: 60%;
+    background-position: -25vw 10%;
+    }
+  }
+
+    &__content {
+    display: flex;
+    flex-direction: column; 
+
+    @media screen and (min-width: 640px) {
+        flex-direction: row; 
+        gap: 2rem;
+        align-items: flex-start;
+        margin: 2rem;
+    }
+    }
+   &__image {
+      background-color: vars.$neutral0;
+      width: calc(100% + $padding);
+      padding: 3rem;
+      
+    @media screen and (min-width: 640px) {
+      width: 100%;
+      margin: 0 !important;
+      border-radius: 2rem !important;
+      height: 33vh;
+      object-fit: contain;
+    }
+    }
+
+  &__article {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  &:nth-child(even) {
+    .section3__image {
+      margin-left: calc(-1 * $padding); 
+      margin-right: 0;
+      border-radius: 0 1.5rem 1.5rem 0;
+    }
+  }
+
+  &:nth-child(odd) {
+    .section3__image {
+      margin-right: calc(-1 * $padding); 
+      margin-left: 0;
+      border-radius: 1.5rem 0 0 1.5rem;
+    }
+  }
+  
+  }
+
+  &__text__title {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+  &__subtitle {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__article {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
+}
+}

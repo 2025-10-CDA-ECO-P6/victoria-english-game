@@ -1,3 +1,40 @@
-.game-title{
-    color:red;
+@use "utils/variables" as vars;
+@use "components/nav";
+@use "components/section1";
+@use "components/section2";
+@use "components/section3";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: vars.$font-main;
+  line-height: 1.5;
+  color: vars.$text-color;
+}
+
+body {
+  background-color: vars.$secondary-color;
+  min-height: 100vh;
+}
+
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
 }

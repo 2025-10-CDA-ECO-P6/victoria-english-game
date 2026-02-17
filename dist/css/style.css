@@ -1,5 +1,230 @@
-.game-title {
-  color: red;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #187078;
+  border-bottom: 6px solid #0AA8AC;
+  padding: 1rem;
+}
+.nav__logo-image {
+  height: 3rem;
+  width: auto;
+}
+.nav__list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.nav__link {
+  display: flex;
+  align-items: center;
+}
+.nav__icon {
+  height: 30px;
+  width: 30px;
+}
+
+.section1 {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem 0.75rem 4rem 0.75rem;
+  background-color: #063C45;
+  color: #cdfffb;
+  grid-template-columns: 1fr;
+  position: relative;
+  z-index: 0;
+}
+.section1__title {
+  font-size: 3rem;
+}
+.section1__image {
+  width: 100%;
+  border-radius: 16px;
+  border: 8px solid #cdfffb;
+}
+@media screen and (min-width: 1024px) {
+  .section1 {
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem;
+    gap: 2rem;
+  }
+  .section1__title {
+    font-size: 4rem;
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 1rem;
+  }
+  .section1__description {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .section1__image {
+    grid-column: 2;
+    grid-row: 1/3;
+    align-self: center;
+  }
+}
+
+.section2 {
+  background-color: #ffffff;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: -2rem;
+  padding-top: 3rem;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .section2 {
+    margin-top: -2rem;
+  }
+}
+.section2 {
+  color: #187078;
+  padding: 2rem;
+  text-align: center;
+}
+.section2__subtitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.section2__button {
+  background-color: #FEBD1C;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section3 {
+  background-color: #42BDCC;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: -2rem;
+  padding-top: 3rem;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .section3 {
+    margin-top: -2rem;
+  }
+}
+.section3 {
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.section3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../assets/section3/Calendar.svg");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: -10vw 4%;
+  opacity: 0.2;
+  z-index: 0;
+  border-radius: inherit;
+}
+@media screen and (min-width: 640px) {
+  .section3::before {
+    background-size: 60%;
+    background-position: -25vw 10%;
+  }
+}
+.section3__content {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 640px) {
+  .section3__content {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    margin: 2rem;
+  }
+}
+.section3__image {
+  background-color: #ffffff;
+  width: calc(100% + 2rem);
+  padding: 3rem;
+}
+@media screen and (min-width: 640px) {
+  .section3__image {
+    width: 100%;
+    margin: 0 !important;
+    border-radius: 2rem !important;
+    height: 33vh;
+    object-fit: contain;
+  }
+}
+.section3__article {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section3__article:nth-child(even) .section3__image {
+  margin-left: -2rem;
+  margin-right: 0;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+.section3__article:nth-child(odd) .section3__image {
+  margin-right: -2rem;
+  margin-left: 0;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+.section3__text__title {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+.section3__subtitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.section3__article {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+body {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
