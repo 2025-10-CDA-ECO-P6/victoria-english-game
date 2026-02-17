@@ -9,13 +9,30 @@
   padding: $padding;
   text-align: center;
   padding-top: 1rem;
-  display: flex;         
-  flex-direction: column;
 
+    &__content {
+    display: flex;
+    flex-direction: column; 
+
+    @media screen and (min-width: 640px) {
+        flex-direction: row; 
+        gap: 2rem;
+        align-items: flex-start;
+        margin: 2rem;
+    }
+    }
    &__image {
       background-color: vars.$neutral0;
       width: calc(100% + $padding);
       padding: 3rem;
+      
+    @media screen and (min-width: 640px) {
+      width: 100%;
+      margin: 0 !important;
+      border-radius: 2rem !important;
+      height: 33vh;
+      object-fit: contain;
+    }
     }
 
   &__article {
@@ -41,12 +58,18 @@
       border-radius: 1.5rem 0 0 1.5rem;
     }
   }
+  
   }
 
+  &__text__title {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
   &__subtitle {
     font-size: 2.25rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   &__article {
