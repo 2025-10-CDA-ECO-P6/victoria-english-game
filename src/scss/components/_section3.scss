@@ -1,0 +1,56 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mix;
+
+.section3 {
+  @include mix.rounded-section(vars.$primary400);
+  color: vars.$neutral0;
+  padding: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+  display: flex;         
+  flex-direction: column;
+
+   &__image {
+      background-color: vars.$neutral0;
+      width: 110%;
+      padding: 3rem;
+    }
+
+  &__article {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  &:nth-child(even) {
+    .section3__image {
+      margin-left: -2rem; 
+      margin-right: 0;
+      border-radius: 0 1.5rem 1.5rem 0;
+    }
+  }
+
+  &:nth-child(odd) {
+    .section3__image {
+      margin-right: -2rem; 
+      margin-left: 0;
+      border-radius: 1.5rem 0 0 1.5rem;
+    }
+  }
+  }
+
+  &__subtitle {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  &__article {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
+}
+}
