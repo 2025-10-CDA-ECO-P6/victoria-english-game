@@ -1,0 +1,20 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mix;
+
+.section4{
+    @include mix.rounded-section(vars.$neutral0);
+    color: vars.$primary900;
+    padding: 2rem;
+    text-align: center;
+
+    &__subtitle {
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+    }
+
+   &__button { 
+    @include mix.button(vars.$secondary500);
+    }
+}
