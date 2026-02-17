@@ -3,10 +3,12 @@
 .section1 {
   display: grid;
   gap: 1.5rem;
-  padding: 2rem 0.75rem;
+  padding: 2rem 0.75rem 4rem 0.75rem;
   background-color: vars.$primary950;
   color: vars.$primary200;
   grid-template-columns: 1fr;
+  position: relative;
+  z-index: 0;
 
   &__title {
     font-size: 3rem;

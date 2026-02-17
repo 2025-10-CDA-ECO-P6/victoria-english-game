@@ -1,6 +1,7 @@
 @use "utils/variables" as vars;
 @use "components/nav";
 @use "components/section1";
+@use "components/section2";
 
 * {
   margin: 0;
@@ -19,6 +20,7 @@ body {
   background-color: vars.$secondary-color;
   min-height: 100vh;
 }
+
 
 ul, ol {
   list-style: none;
